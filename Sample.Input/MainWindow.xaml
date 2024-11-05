@@ -1,0 +1,48 @@
+﻿<Window x:Class="Sample.Input.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Sample.Input"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <DockPanel>
+        <TextBox x:Name="tbox" Height="45"  DockPanel.Dock="Top"/>
+        <WrapPanel >
+            <WrapPanel.Resources>
+                <Style TargetType="Button" >
+                    <Setter Property="Width" Value="60"   />
+                    <Setter Property="Height" Value="30"  />
+                    <Setter Property="Margin" Value="2" />
+                </Style>
+            </WrapPanel.Resources>
+            <Button Content="CapsLock" Click="Button_Click"/>
+            <Button Content="A" Click="Button_Click_A"/>
+            <Button Content="B" Click="Button_Click_B"/>
+            <Button Content="C" Click="Button_Click_C"/>
+            <Button Content="D"/>
+            <Button Content="E"/>
+            <Button Content="F"/>
+            <Button Content="G"/>
+            <Button Content="H"/>
+            <Button Content="I"/>
+            <Button Content="J"/>
+            <Button Content="K"/>
+            <Button Content="L"/>
+            <Button Content="M"/>
+            <Button Content="N"/>
+            <Button Content="O"/>
+            <Button Content="P"/>
+            <Button Content="Q"/>
+            <Button Content="R"/>
+            <Button Content="S"/>
+            <Button Content="T"/>
+            <Button Content="U"/>
+            <Button Content="V"/>
+            <Button Content="W"/>
+            <Button Content="X"/>
+            <Button Content="Y"/>
+            <Button Content="Z"/>
+        </WrapPanel>
+    </DockPanel>
+</Window>
