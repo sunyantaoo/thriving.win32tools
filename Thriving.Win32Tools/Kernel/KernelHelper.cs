@@ -20,8 +20,8 @@ namespace Thriving.Win32Tools
         [DllImport(_library)]
         public static extern bool FreeLibrary(IntPtr hModule);
 
-        [DllImport(_library,CharSet =CharSet.Unicode)]
-        public static extern IntPtr GetProcAddress(IntPtr hModule, [MarshalAs(UnmanagedType.LPWStr)] string lpProcName);
+        [DllImport(_library)]
+        public static extern IntPtr GetProcAddress(IntPtr hModule, [MarshalAs(UnmanagedType.LPStr)] string lpProcName);
 
         /// <summary>
         /// 获取最后一次错误代码
